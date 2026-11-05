@@ -24,6 +24,18 @@ def index():
             <input type="submit" value="Submit">
         </form>
     '''
+@app.route("/Goodbye", methods=["GET", "POST"])
+def index():
+
+
+    # ... your GET handler or template rendering here ...
+
+    return '''
+        <h1>Welcome!</h1>
+        <form method="POST">
+            <input type="text" name="GoodBye"><br>
+        </form>
+    '''
 
 if __name__ == "__main__":
     import os
